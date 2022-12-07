@@ -1,0 +1,140 @@
+.footer {
+  background-color: var(--gray-dark);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.l-footer {
+  color: #ffffff;
+}
+
+.footer-content {
+  display: flex;
+  gap: 70px;
+  justify-content: flex-start;
+  align-items: baseline;
+}
+
+.footer-tit {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--wight);
+}
+.footer-soc-list {
+  margin-top: 20px;
+}
+
+.footer-adress,
+.footer-link {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  font-style: normal;
+  &:hover,
+  &:focus,
+  &:active {
+    color: var(--blue);
+  }
+}
+
+.footer-adress {
+  color: var(--wight);
+}
+.footer-link,
+.footer-input {
+  color: var(--ft-color);
+}
+.footer-item {
+  margin-top: 20px;
+}
+.footer-items {
+  margin-top: 9px;
+}
+.footer-link,
+.footer-adress {
+  transition: color 250ms var(--timing-function);
+}
+
+.footer-soc-list {
+  display: flex;
+  gap: 10px;
+}
+
+.footer-soc-item {
+  width: 44px;
+  height: 44px;
+}
+
+.footer-soc-link {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-soc-link {
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: background-color 250ms var(--timing-function);
+  &:hover,
+  &:focus {
+    background-color: var(--blue);
+    color: var(--wight);
+  }
+}
+.footer-soc-icon {
+  fill: var(--wight);
+}
+
+.footer-form-div {
+  margin-left: 23px;
+}
+.footer-form {
+  display: flex;
+  gap: 12px;
+  margin-top: 20px;
+  background-color: var(--gray-dark);
+}
+
+.footer-input {
+  width: 358px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: calc(20 / 16);
+  letter-spacing: 0.03em;
+  padding: 15px 16px 15px;
+  background-color: var(--gray-dark);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  transition: border-color 250ms var(--timing-function);
+  &:focus {
+    border-color: var(--blue);
+  }
+  &:-webkit-autofill {
+    box-shadow: inset 0 0 0 50px var(--gray-dark);
+    -webkit-text-fill-color: var(--wight);
+  }
+  .footer-label:hover &,
+  .footer-label:focus & {
+    border-color: var(--blue);
+    cursor: pointer;
+  }
+}
+
+.footer-bt {
+  position: relative;
+  padding: 10px 62px 10px 28px;
+}
+.footer-bt-icon {
+  fill: currentColor;
+  position: absolute;
+  top: 13px;
+  left: 148px;
+}

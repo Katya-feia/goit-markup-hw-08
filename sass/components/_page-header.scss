@@ -1,0 +1,70 @@
+.header {
+  background-color: var(--wight);
+  padding-top: 32px;
+  padding-bottom: 32px;
+  border-bottom: 1px solid #ececec;
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+}
+
+.header__logo {
+  color: #000000;
+}
+
+.header__nav {
+  display: flex;
+  gap: 50px;
+  margin-left: 93px;
+}
+.header__nav .header__link {
+  position: relative;
+}
+
+.header__link.current {
+  color: var(--blue);
+  &::after {
+    position: absolute;
+    bottom: -39px;
+    right: 0px;
+    content: "";
+    width: 100%;
+    height: 4px;
+    background-color: var(--blue);
+    border-radius: 2px;
+  }
+}
+.header__contacts {
+  display: flex;
+  gap: 50px;
+  margin-left: auto;
+}
+.header__link,
+.header__contact {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  transition: color 250ms var(--timing-function);
+  &:hover,
+  :focus,
+  :active {
+    color: var(--blue);
+  }
+}
+.header__link {
+  color: var(--mt-color);
+}
+.header__contact {
+  color: var(--nt-color);
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.header__icon {
+  fill: currentColor;
+}
