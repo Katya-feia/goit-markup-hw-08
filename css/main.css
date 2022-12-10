@@ -36,6 +36,9 @@ ul {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
+  width: 100%;
 }
 
 body {
@@ -62,7 +65,7 @@ button {
 }
 
 .container {
-  width: 1200px;
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
@@ -73,6 +76,18 @@ button {
   padding-bottom: 94px;
 }
 
+/*.container{
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+  }
+
+.section{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+*/
 .logo {
   font-family: "Raleway", sans-serif;
   text-decoration: none;
@@ -301,13 +316,21 @@ button {
 
 .team__title {
   font-weight: 700;
+  font-size: 28px;
+  line-height: 1.1785714286;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 30px;
+}
+
+/*.team__title {
+  font-weight: 700;
   font-size: 36px;
-  line-height: 1.1666666667;
+  line-height: calc(42 / 36);
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 50px;
-}
-
+}*/
 .team__list {
   display: flex;
   gap: 30px;
