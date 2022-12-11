@@ -16,15 +16,6 @@
   }
 }
 
-/*.team__title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: calc(42 / 36);
-  text-align: center;
-  letter-spacing: 0.03em;
-  margin-bottom: 50px;
-}*/
-
 .team__list {
   display: flex;
   flex-wrap: wrap;
@@ -35,9 +26,9 @@
 
 .team__card {
   width: 100%;
- /* @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) {
     width: calc((100% - 30px)/ 2);
-  }*/
+  }
   @media screen and (min-width: 1200px) {
     width: calc((100% - 90px)/ 4);
   }

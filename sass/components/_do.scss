@@ -1,5 +1,15 @@
 .do {
   background: var(--wight);
+  @media screen and (max-width:1200px) {
+    visibility: hidden;
+    pointer-events: none;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+}
 }
 
 .do__title {
