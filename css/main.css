@@ -101,10 +101,16 @@ button {
   font-family: "Raleway", sans-serif;
   text-decoration: none;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.1923076923;
+  font-size: 24px;
+  line-height: 1.1666666667;
   letter-spacing: 0.03em;
   color: var(--blue);
+}
+@media screen and (min-width: 1200px) {
+  .logo {
+    font-size: 26px;
+    line-height: 1.1923076923;
+  }
 }
 
 .btn {
@@ -544,11 +550,7 @@ button {
   flex-wrap: wrap;
   gap: 60px;
   justify-content: center;
-}
-@media screen and (min-width: 768px) {
-  .footer-content {
-    justify-content: space-between;
-  }
+  align-items: baseline;
 }
 
 @media screen and (max-width: 1200px) {
@@ -571,7 +573,7 @@ button {
 .footer-link {
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.7142857143;
+  line-height: 1.1428571429;
   letter-spacing: 0.03em;
   text-decoration: none;
   font-style: normal;
@@ -593,11 +595,11 @@ button {
 }
 
 .footer-item {
-  margin-top: 20px;
+  margin-top: 28px;
 }
 
 .footer-items {
-  margin-top: 9px;
+  margin-top: 12px;
 }
 
 .footer-link,
@@ -605,14 +607,15 @@ button {
   transition: color 250ms var(--timing-function);
 }
 
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .footer-soc {
+    margin-left: 105px;
+  }
+}
 @media screen and (max-width: 1200px) {
   .footer-soc {
     text-align: center;
   }
-}
-
-.footer-soc-list {
-  margin-top: 20px;
 }
 
 .footer-soc-list {
@@ -656,13 +659,16 @@ button {
 .footer-form {
   display: flex;
   flex-wrap: wrap;
-  gap: 12px;
-  margin-top: 8px;
-  background-color: var(--gray-dark);
+  gap: 20px;
+}
+@media screen and (min-width: 1200px) {
+  .footer-form {
+    gap: 12px;
+  }
 }
 
 .footer-input {
-  width: 358px;
+  width: auto;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
@@ -673,6 +679,16 @@ button {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   transition: border-color 250ms var(--timing-function);
+}
+@media screen and (min-width: 768px) {
+  .footer-input {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-input {
+    width: 358px;
+  }
 }
 .footer-input:focus {
   border-color: var(--blue);
@@ -688,7 +704,12 @@ button {
 
 .footer-bt {
   position: relative;
-  padding: 10px 62px 10px 28px;
+  padding: 10px 64px 10px 31px;
+}
+@media screen and (min-width: 1200px) {
+  .footer-bt {
+    padding: 10px 62px 10px 28px;
+  }
 }
 
 .footer-bt-icon {
