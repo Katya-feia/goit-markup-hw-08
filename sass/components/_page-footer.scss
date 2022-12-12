@@ -104,21 +104,25 @@
 }
 
 .footer-form-div {
+  @media screen and (max-width:768px) {
+    width: 100%;}
   @media screen and (max-width: 1200px) {
     text-align: center;
   }
 }
 .footer-form {
+  
   display: flex;
-  flex-wrap: wrap;
+  flex-direction:column;
   gap: 20px;
   @media screen and (min-width: 1200px) {
     gap: 12px;
+    flex-direction:row;
 }}
 
 .footer-input {
-  width: auto;
-  @media screen and (min-width: 768px) {
+  width: 100%;
+  @media screen and (min-width: 480px) {
     width: 450px;
   }
   @media screen and (min-width: 1200px) {
