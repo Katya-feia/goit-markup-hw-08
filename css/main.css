@@ -257,17 +257,6 @@ button {
   margin-left: auto;
   margin-right: auto;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/Img0mob.jpg");
-  /* @media (min-device-pixel-ratio: 2),
-   (-webkit-min-device-pixel-ratio: 2),
-   (min-resolution: 192dpi),
-   (min-resolution: 2dppx) {
-     background-image: linear-gradient(
-       to right,
-       rgba(47, 48, 58, 0.4),
-       rgba(47, 48, 58, 0.4)
-     ),
-     url("../../images/Img0mob2x.jpg");
-   }*/
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -326,6 +315,7 @@ button {
   text-transform: uppercase;
   color: #ffffff;
   margin-bottom: 30px;
+  color: chartreuse;
 }
 @media screen and (min-width: 480px) {
   .hero__title {
