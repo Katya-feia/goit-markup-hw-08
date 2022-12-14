@@ -7,11 +7,11 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../../images/Img0mob.jpg);
+    url("../../images/Img0tabl.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-color: var(--gray-dark);
+    background-color: var(--gray-dark);
   padding-top: 118px;
   padding-bottom: 118px;
   @media screen and (min-width: 480px) {
@@ -20,7 +20,7 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../../images/Img0tabl.jpg);
+    url("../../images/Img0tabl.jpg");
   }
   @media screen and (min-width: 768px) {
     background-image: linear-gradient(
@@ -28,7 +28,7 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../../images/Img0.jpg);
+    url("../../images/Img0tabl.jpg");
   }
   @media screen and (min-width: 1200px) {
     
