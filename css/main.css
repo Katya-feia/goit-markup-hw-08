@@ -52,6 +52,10 @@ button {
   cursor: pointer;
 }
 
+a {
+  text-decoration: none;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -171,14 +175,7 @@ button {
 }
 @media screen and (max-width: 768px) {
   .header__nav {
-    visibility: hidden;
-    pointer-events: none;
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
+    display: none;
   }
 }
 
@@ -191,14 +188,7 @@ button {
 }
 @media screen and (max-width: 768px) {
   .header__link.current {
-    visibility: hidden;
-    pointer-events: none;
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
+    display: none;
   }
 }
 .header__link.current::after {
@@ -221,19 +211,7 @@ button {
 }
 @media screen and (max-width: 768px) {
   .header__contacts {
-    visibility: hidden;
-    pointer-events: none;
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    gap: 50px;
-    margin-left: 93px;
+    display: none;
   }
 }
 
@@ -275,11 +253,51 @@ button {
   fill: currentColor;
 }
 
+.mob-menu {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--wight);
+  padding-top: 10px;
+  padding-bottom: 48px;
+}
+
+.menu-close {
+  display: block;
+  margin-left: auto;
+}
+
+.menu-list-item {
+  margin-bottom: 32px;
+}
+.menu-list-item:last-child {
+  margin-bottom: 306px;
+}
+
+.menu-link {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.175;
+  letter-spacing: 0.02em;
+  color: var(--mt-color);
+  margin-bottom: 32px;
+}
+
+.mob-soc-link {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.2222222222;
+  letter-spacing: 0.02em;
+  color: var(--blue);
+}
+
 .hero {
   max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
-  background-image: var(--grad), url(../images/Img0mob.jpg);
+  background-image: var(--grad), url("../../images/Img0mob.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -289,12 +307,12 @@ button {
 }
 @media screen and (min-width: 480px) {
   .hero {
-    background-image: var(--grad), url(../images/Img0tabl.jpg);
+    background-image: var(--grad), url("../../images/Img0tabl.jpg");
   }
 }
 @media screen and (min-width: 768px) {
   .hero {
-    background-image: var(--grad), url(../images/Img0.jpg);
+    background-image: var(--grad), url("../../images/Img0.jpg");
   }
 }
 @media screen and (min-width: 1200px) {

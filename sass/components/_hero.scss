@@ -3,7 +3,7 @@
   margin-left: auto;
   margin-right: auto;
   background-image: var(--grad),
-    url(../images/Img0mob.jpg);
+    url("../../images/Img0mob.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -12,11 +12,11 @@
   padding-bottom: 118px;
   @media screen and (min-width: 480px) {
     background-image: var(--grad),
-    url(../images/Img0tabl.jpg);
+    url("../../images/Img0tabl.jpg");
   }
   @media screen and (min-width: 768px) {
     background-image: var(--grad),
-    url(../images/Img0.jpg);
+    url("../../images/Img0.jpg");
   }
   @media screen and (min-width: 1200px) {
     background-size: 1600px;
