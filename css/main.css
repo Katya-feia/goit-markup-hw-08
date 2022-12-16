@@ -148,9 +148,24 @@ a {
 
 .header {
   background-color: var(--wight);
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 15px;
+  padding-right: 10px;
   border-bottom: 1px solid #ececec;
+}
+@media screen and (min-width: 768px) {
+  .header {
+    padding: 15px 26px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header {
+    padding-top: 24px;
+    padding-bottom: 25px;
+    padding-left: 215px;
+    padding-right: 215px;
+  }
 }
 
 .header__container {
@@ -193,7 +208,7 @@ a {
 }
 .header__link.current::after {
   position: absolute;
-  bottom: -39px;
+  bottom: -34px;
   right: 0px;
   content: "";
   width: 100%;
@@ -262,11 +277,66 @@ a {
   background-color: var(--wight);
   padding-top: 10px;
   padding-bottom: 48px;
+  padding-left: 25px;
 }
 
+@media screen and (min-width: 767px) {
+  .menu-open {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    -webkit-clip-path: inset(100%);
+            clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+}
+
+.menu-open,
 .menu-close {
   display: block;
   margin-left: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: none;
+  background-color: var(--wight);
+  color: var(--mt-color);
+  -webkit-transition: color 250ms var(--timing-function);
+  transition: color 250ms var(--timing-function);
+}
+.menu-open:hover, .menu-open:focus,
+.menu-close:hover,
+.menu-close:focus {
+  color: var(--blue);
+}
+
+@media screen and (min-width: 767px) {
+  .menu-close-icon {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    -webkit-clip-path: inset(100%);
+            clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+}
+
+.menu-close-icon,
+.menu-open-icon {
+  fill: currentColor;
 }
 
 .menu-list-item {
@@ -283,6 +353,13 @@ a {
   letter-spacing: 0.02em;
   color: var(--mt-color);
   margin-bottom: 32px;
+}
+
+.mob-soc-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
 }
 
 .mob-soc-link {
