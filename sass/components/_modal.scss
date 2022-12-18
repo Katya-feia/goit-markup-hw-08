@@ -18,8 +18,13 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  width: 100vw;
+  @media screen and (min-width:480px) {
+  height: 609px;
+  width: 450px;}
+  @media screen and (min-width:1200px) {
   height: 580px;
-  width: 530px;
+  width: 530px;}
   background-color: var(--wight);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -58,9 +63,18 @@
   padding: 40px;
 }
 .form-tit {
+  width: 240px;
+font-size: 16px;
+line-height: calc(30 / 16);
+@media screen and (min-width:480px) {
+font-size: 20px;
+line-height: calc(30 / 20);
+width: 370px;}
   font-weight: 700;
-  font-size: 20px;
+  @media screen and (min-width:1200px) {
   line-height: calc(23 / 20);
+  width: 448px;
+}
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 12px;
@@ -157,8 +171,11 @@
 
 .check-text {
   font-weight: 400;
+font-size: 12px;
+line-height: calc(14 / 12);
+@media screen and (min-width:1200px) {
   font-size: 14px;
-  line-height: calc(24 / 14);
+  line-height: calc(24 / 14);}
   letter-spacing: 0.03em;
   color: var(--nt-color);
 }
@@ -176,8 +193,11 @@
 
 .check-link {
   font-weight: 400;
-  font-size: 14px;
-  line-height: calc(24 / 14);
+  font-size: 12px;
+  line-height: calc(14 / 12);
+  @media screen and (min-width:1200px) {
+    font-size: 14px;
+    line-height: calc(24 / 14);}
   letter-spacing: 0.03em;
   text-decoration: none;
   font-style: normal;

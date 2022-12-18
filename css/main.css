@@ -56,6 +56,10 @@ a {
   text-decoration: none;
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -306,6 +310,11 @@ a {
   padding-bottom: 48px;
   padding-left: 40px;
   padding-right: 15px;
+}
+
+.mob-menu.is-hidden {
+  opacity: 0;
+  pointer-events: none;
 }
 
 @media screen and (min-width: 767px) {
@@ -1211,8 +1220,7 @@ a {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  height: 580px;
-  width: 530px;
+  width: 100vw;
   background-color: var(--wight);
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -1222,6 +1230,18 @@ a {
   transition: -webkit-transform 200ms var(--timing-function) 500ms;
   transition: transform 200ms var(--timing-function) 500ms;
   transition: transform 200ms var(--timing-function) 500ms, -webkit-transform 200ms var(--timing-function) 500ms;
+}
+@media screen and (min-width: 480px) {
+  .modal {
+    height: 609px;
+    width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    height: 580px;
+    width: 530px;
+  }
 }
 
 .moda.backdrop.is-hidden {
@@ -1265,12 +1285,26 @@ a {
 }
 
 .form-tit {
+  width: 240px;
+  font-size: 16px;
+  line-height: 1.875;
   font-weight: 700;
-  font-size: 20px;
-  line-height: 1.15;
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 12px;
+}
+@media screen and (min-width: 480px) {
+  .form-tit {
+    font-size: 20px;
+    line-height: 1.5;
+    width: 370px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .form-tit {
+    line-height: 1.15;
+    width: 448px;
+  }
 }
 
 .form-label,
@@ -1381,10 +1415,16 @@ a {
 
 .check-text {
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.7142857143;
+  font-size: 12px;
+  line-height: 1.1666666667;
   letter-spacing: 0.03em;
   color: var(--nt-color);
+}
+@media screen and (min-width: 1200px) {
+  .check-text {
+    font-size: 14px;
+    line-height: 1.7142857143;
+  }
 }
 
 .check-input {
@@ -1400,11 +1440,17 @@ a {
 
 .check-link {
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.7142857143;
+  font-size: 12px;
+  line-height: 1.1666666667;
   letter-spacing: 0.03em;
   text-decoration: none;
   font-style: normal;
+}
+@media screen and (min-width: 1200px) {
+  .check-link {
+    font-size: 14px;
+    line-height: 1.7142857143;
+  }
 }
 .check-link::after {
   position: absolute;
