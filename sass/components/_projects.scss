@@ -4,10 +4,19 @@
 
 .sec-filter-list {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  row-gap: 15px;
+  column-gap: 8px;
+  margin-bottom: 40px;
+  margin-right: 100px;
+  @media screen and (min-width: 768px) {
+    margin-right: 0;
   justify-content: center;
-  gap: 8px;
+  margin-bottom: 30px;}
+  @media screen and (min-width: 1200px) {
   margin-bottom: 50px;
-}
+}}
 
 .sec-filter-bt {
   font-weight: 500;
@@ -18,7 +27,7 @@
   background-color: var(--gray-light);
   border: none;
   border-radius: 4px;
-  padding: 6px 25px;
+  padding: 6px 22px;
   transition: background-color 250ms var(--timing-function),
     color 250ms var(--timing-function), box-shadow 250ms var(--timing-function);
   &:hover,
@@ -37,10 +46,18 @@
   flex-wrap: wrap;
   gap: 30px;
   padding: 0;
+  
 }
 
 .sec-projects-item {
-  flex-basis: calc((100% - 60px) / 3);
+  width: 100%;
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 30px) / 2);
+  }
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 60px) / 3);
+  }
+
   transition: box-shadow 250ms var(--timing-function);
   &:hover,
   &:focus {

@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-  <header class="header">
+    <header class="header">
       <div class="container header__container">
         <a class="logo" href="./index.html">
           Web<span class="header__logo">Studio</span></a
@@ -61,13 +61,12 @@
           </svg>
         </button>
       </div>
-<div class="mob-menu is-hidden" data-menu>
-        
-          <button type="button" class="menu-close" data-menu-close>
-            <svg class="menu-close-icon" width="40" height="40">
-              <use href="./images/icons.svg#icon-menuclose"></use>
-            </svg>
-          </button>
+      <div class="mob-menu is-hidden" data-menu>
+        <button type="button" class="menu-close" data-menu-close>
+          <svg class="menu-close-icon" width="40" height="40">
+            <use href="./images/icons.svg#icon-menuclose"></use>
+          </svg>
+        </button>
         <ul class="menu-list">
           <li class="menu-list-item">
             <a class="menu-link current" href="./index.html">Студія</a>
@@ -75,50 +74,69 @@
           <li class="menu-list-item">
             <a class="menu-link" href="./portfolio.html">Портфоліо</a>
           </li>
-          <li class="menu-list-item"><a class="menu-link" href="#">Контакти</a></li>
+          <li class="menu-list-item">
+            <a class="menu-link" href="#">Контакти</a>
+          </li>
         </ul>
         <ul class="menu-contacts">
           <li class="menu-contact-item">
             <a class="menu-contact-tel" href="tel:+380961111111"
-              >+38 096 111 11 11</a>
-            
+              >+38 096 111 11 11</a
+            >
           </li>
           <li class="menu-contact-item">
-            <a class="menu-contact" href="mailto:info@devstudio.com"
-              >
-              info@devstudio.com</a>
+            <a class="menu-contact" href="mailto:info@devstudio.com">
+              info@devstudio.com</a
+            >
           </li>
         </ul>
         <ul class="mob-soc-list">
           <li class="mob-soc-item">
-            <a href="" target="_blank" rel="noopener noreferrer" class="mob-soc-link">
+            <a
+              href=""
+              target="_blank"
+              rel="noopener noreferrer"
+              class="mob-soc-link"
+            >
               Instagram
             </a>
           </li>
           <li class="mob-soc-item">
-            <a href="" target="_blank" rel="noopener noreferrer" class="mob-soc-link">
+            <a
+              href=""
+              target="_blank"
+              rel="noopener noreferrer"
+              class="mob-soc-link"
+            >
               Twitter
             </a>
           </li>
           <li class="mob-soc-item">
-            <a href="" target="_blank" rel="noopener noreferrer" class="mob-soc-link">
+            <a
+              href=""
+              target="_blank"
+              rel="noopener noreferrer"
+              class="mob-soc-link"
+            >
               Facebook
             </a>
           </li>
           <li class="mob-soc-item">
-            <a href="" target="_blank" rel="noopener noreferrer" class="mob-soc-link">
+            <a
+              href=""
+              target="_blank"
+              rel="noopener noreferrer"
+              class="mob-soc-link"
+            >
               LinkedIn
             </a>
           </li>
         </ul>
-   
-        
       </div>
     </header>
 
     <main>
-     
- <section class="section hero">
+      <section class="section hero">
         <div class="container">
           <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
           <button class="btn hero__btn" type="button" data-modal-open>
@@ -126,7 +144,7 @@
           </button>
         </div>
       </section>
-     
+
       <section class="section benefits">
         <div class="container">
           <h2 class="visually-hidden">Переваги</h2>
@@ -187,7 +205,7 @@
           <ul class="do__list">
             <li class="do__item">
               <img
-                srcset="./images/img1.jpg 1x,  ./images/img1-2x.jpg 2x"
+                srcset="./images/img1.jpg 1x, ./images/img1-2x.jpg 2x"
                 src="./images/img1.jpg"
                 alt="робочий стіл розробникм"
                 width="370"
@@ -196,17 +214,20 @@
             </li>
             <li class="do__item">
               <img
-              srcset="./images/img2.jpg 1x,  ./images/img2-2x.jpg 2x"
-              src="./images/img2.jpg"
+                srcset="./images/img2.jpg 1x, ./images/img2-2x.jpg 2x"
+                src="./images/img2.jpg"
                 alt="робота над мобільним додатком"
                 width="370"
               />
               <p class="do__label">Мобільні додатки</p>
             </li>
             <li class="do__item">
-              <img 
-              srcset="./images/img3.jpg 1x,  ./images/img3-2x.jpg 2x"
-              src="./images/img3.jpg" alt="розробка дизайну" width="370" />
+              <img
+                srcset="./images/img3.jpg 1x, ./images/img3-2x.jpg 2x"
+                src="./images/img3.jpg"
+                alt="розробка дизайну"
+                width="370"
+              />
               <p class="do__label">Дизайнерські рішення</p>
             </li>
           </ul>
@@ -220,24 +241,30 @@
             <li class="team__card">
               <picture>
                 <source
-                srcset="./images/img21.jpg 1x, ./images/img21-2x.jpg 2x"
-                media="(min-width: 1200px)"
+                  srcset="./images/img21.jpg 1x, ./images/img21-2x.jpg 2x"
+                  media="(min-width: 1200px)"
                 />
                 <source
-                srcset="./images/img21-tab.jpg 1x, ./images/img21-tab-2x.jpg 2x"
-                media="(min-width: 768px)"
+                  srcset="
+                    ./images/img21-tab.jpg    1x,
+                    ./images/img21-tab-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
                 />
                 <source
-                srcset="./images/img21-mob.jpg 1x, ./images/img21-mob-2x.jpg 2x"
-                media="(max-width: 767px)"
+                  srcset="
+                    ./images/img21-mob.jpg    1x,
+                    ./images/img21-mob-2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
                 />
-                <img 
-                
-                src="./images/img21-mob.jpg" 
-                alt="Ігор Дем'яненко"
-                width="450" />
+                <img
+                  src="./images/img21-mob.jpg"
+                  alt="Ігор Дем'яненко"
+                  width="450"
+                />
               </picture>
-              
+
               <div class="team__box">
                 <h3 class="team__nome">Ігор Дем'яненко</h3>
                 <p class="team__text">Product Designer</p>
@@ -276,22 +303,28 @@
             <li class="team__card">
               <picture>
                 <source
-                srcset="./images/img22.jpg 1x, ./images/img22-2x.jpg 2x"
-                media="(min-width: 1200px)"
+                  srcset="./images/img22.jpg 1x, ./images/img22-2x.jpg 2x"
+                  media="(min-width: 1200px)"
                 />
                 <source
-                srcset="./images/img22-tab.jpg 1x, ./images/img22-tab-2x.jpg 2x"
-                media="(min-width: 768px)"
+                  srcset="
+                    ./images/img22-tab.jpg    1x,
+                    ./images/img22-tab-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
                 />
                 <source
-                srcset="./images/img22-mob.jpg 1x, ./images/img22-mob-2x.jpg 2x"
-                media="(max-width: 767px)"
+                  srcset="
+                    ./images/img22-mob.jpg    1x,
+                    ./images/img22-mob-2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
                 />
-                <img 
-                
-                src="./images/img22-mob.jpg" 
-                alt="Ольга Рєпіна"
-                width="450" />
+                <img
+                  src="./images/img22-mob.jpg"
+                  alt="Ольга Рєпіна"
+                  width="450"
+                />
               </picture>
               <div class="team__box">
                 <h3 class="team__nome">Ольга Рєпіна</h3>
@@ -331,22 +364,28 @@
             <li class="team__card">
               <picture>
                 <source
-                srcset="./images/img23.jpg 1x, ./images/img23-2x.jpg 2x"
-                media="(min-width: 1200px)"
+                  srcset="./images/img23.jpg 1x, ./images/img23-2x.jpg 2x"
+                  media="(min-width: 1200px)"
                 />
                 <source
-                srcset="./images/img23-tab.jpg 1x, ./images/img23-tab-2x.jpg 2x"
-                media="(min-width: 768px)"
+                  srcset="
+                    ./images/img23-tab.jpg    1x,
+                    ./images/img23-tab-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
                 />
                 <source
-                srcset="./images/img23-mob.jpg 1x, ./images/img23-mob-2x.jpg 2x"
-                media="(max-width: 767px)"
+                  srcset="
+                    ./images/img23-mob.jpg    1x,
+                    ./images/img23-mob-2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
                 />
-                <img 
-                
-                src="./images/img23-mob.jpg" 
-                alt="Микола Тарасов"
-                width="450" />
+                <img
+                  src="./images/img23-mob.jpg"
+                  alt="Микола Тарасов"
+                  width="450"
+                />
               </picture>
               <div class="team__box">
                 <h3 class="team__nome">Микола Тарасов</h3>
@@ -386,22 +425,28 @@
             <li class="team__card">
               <picture>
                 <source
-                srcset="./images/img24.jpg 1x, ./images/img24-2x.jpg 2x"
-                media="(min-width: 1200px)"
+                  srcset="./images/img24.jpg 1x, ./images/img24-2x.jpg 2x"
+                  media="(min-width: 1200px)"
                 />
                 <source
-                srcset="./images/img24-tab.jpg 1x, ./images/img24-tab-2x.jpg 2x"
-                media="(min-width: 768px)"
+                  srcset="
+                    ./images/img24-tab.jpg    1x,
+                    ./images/img24-tab-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
                 />
                 <source
-                srcset="./images/img24-mob.jpg 1x, ./images/img24-mob-2x.jpg 2x"
-                media="(max-width: 767px)"
+                  srcset="
+                    ./images/img24-mob.jpg    1x,
+                    ./images/img24-mob-2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
                 />
-                <img 
-                
-                src="./images/img24-mob.jpg" 
-                alt="Михайло Єрмаков"
-                width="450" />
+                <img
+                  src="./images/img24-mob.jpg"
+                  alt="Михайло Єрмаков"
+                  width="450"
+                />
               </picture>
               <div class="team__box">
                 <h3 class="team__nome">Михайло Єрмаков</h3>
@@ -491,7 +536,7 @@
         </div>
       </section>
     </main>
-   <footer class="footer">
+    <footer class="footer">
       <div class="container footer-content">
         <div class="footer-contacts">
           <a class="logo" href="./index.html">
@@ -575,7 +620,7 @@
         </div>
       </div>
     </footer>
-   <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <form class="modal-form">
           <p class="form-tit">Залиште свої дані, ми вам передзвонимо</p>
