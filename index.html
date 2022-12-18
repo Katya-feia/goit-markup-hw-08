@@ -61,8 +61,8 @@
           </svg>
         </button>
       </div>
-      <!--<div class="mob-menu" >
-        <div class="container">
+      <div class="mob-menu" >
+        
           <button type="button" class="menu-close" >
             <svg class="menu-close-icon" width="40" height="40">
               <use href="./images/icons.svg#icon-menuclose"></use>
@@ -78,14 +78,15 @@
           <li class="menu-list-item"><a class="menu-link" href="#">Контакти</a></li>
         </ul>
         <ul class="menu-contacts">
-          <li>
+          <li class="menu-contact-item">
+            <a class="menu-contact-tel" href="tel:+380961111111"
+              >+38 096 111 11 11</a>
+            
+          </li>
+          <li class="menu-contact-item">
             <a class="menu-contact" href="mailto:info@devstudio.com"
               >
               info@devstudio.com</a>
-          </li>
-          <li>
-            <a class="menu-contact" href="tel:+380961111111"
-              >+38 096 111 11 11</a>
           </li>
         </ul>
         <ul class="mob-soc-list">
@@ -110,9 +111,9 @@
             </a>
           </li>
         </ul>
-        </div>
+   
         
-      </div>-->
+      </div>
     </header>
 
     <main>
@@ -186,6 +187,7 @@
           <ul class="do__list">
             <li class="do__item">
               <img
+                srcset="./images/img1.jpg 1x,  ./images/img1-2x.jpg 2x"
                 src="./images/img1.jpg"
                 alt="робочий стіл розробникм"
                 width="370"
@@ -194,14 +196,17 @@
             </li>
             <li class="do__item">
               <img
-                src="./images/img2.jpg"
+              srcset="./images/img2.jpg 1x,  ./images/img2-2x.jpg 2x"
+              src="./images/img2.jpg"
                 alt="робота над мобільним додатком"
                 width="370"
               />
               <p class="do__label">Мобільні додатки</p>
             </li>
             <li class="do__item">
-              <img src="./images/img3.jpg" alt="розробка дизайну" width="370" />
+              <img 
+              srcset="./images/img3.jpg 1x,  ./images/img3-2x.jpg 2x"
+              src="./images/img3.jpg" alt="розробка дизайну" width="370" />
               <p class="do__label">Дизайнерські рішення</p>
             </li>
           </ul>
