@@ -7,6 +7,7 @@
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
   transition: opacity 500ms var(--timing-function);
+
 }
 .backdrop.is-hidden {
   opacity: 0;
@@ -18,9 +19,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 100%;
-  margin-left: 15px;
-  margin-right: 15px;
+  width: 90%;
   @media screen and (min-width:480px) {
   height: 609px;
   width: 450px;}
@@ -65,7 +64,7 @@
   padding: 40px;
 }
 .form-tit {
-  width: 240px;
+  width: auto;
 font-size: 16px;
 line-height: calc(30 / 16);
 @media screen and (min-width:480px) {
