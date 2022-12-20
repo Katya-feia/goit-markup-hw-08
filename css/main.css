@@ -1266,6 +1266,7 @@ a {
   opacity: 1;
   -webkit-transition: opacity 500ms var(--timing-function);
   transition: opacity 500ms var(--timing-function);
+  overflow: auto;
 }
 
 .backdrop.is-hidden {
