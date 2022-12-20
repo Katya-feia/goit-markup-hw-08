@@ -1279,6 +1279,7 @@ a {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  margin-top: 15px;
   width: 90%;
   background-color: var(--wight);
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -1426,7 +1427,6 @@ a {
 }
 
 .form-input,
-.comment-area,
 .form-text,
 .comment-area {
   font-weight: 400;
